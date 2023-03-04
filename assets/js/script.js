@@ -30,8 +30,7 @@ const mobileMenu = document.querySelectorAll("[data-mobile-menu]");
 const mobileMenuCloseBtn = document.querySelectorAll(
   "[data-mobile-menu-close-btn]"
 );
-const overlay = document.querySelectorAll("[data-overlay]");
-
+const overlay = document.querySelector("[data-overlay]");
 for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
   // mobile menu fuction
   const mobileMenuCloseFunc = () => {
@@ -49,11 +48,9 @@ for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
 // accordion variables
 const accordionBtn = document.querySelectorAll("[data-accordion-btn]");
 const accordion = document.querySelectorAll("[data-accordion]");
-// console.log(accordionBtn);
 
 for (let i = 0; i < accordionBtn.length; i++) {
-  console.log("inside");
-  accordionBtn[i].addEventListener("click", () => {
+  accordionBtn[i].addEventListener("click", function () {
     const clickedBtn = this.nextElementSibling.classList.contains("active");
     for (let i = 0; i < accordion.length; i++) {
       if (clickedBtn) break;
