@@ -159,6 +159,17 @@ body::-webkit-scrollbar-thumb:hover {
   scroll-snap-type: inline mandatory;
   overscroll-behavior-inline: contain;
 }
+.title {
+  color: var(--eerie-black);
+  font-size: var(--fs-5);
+  font-weight: var(--weight-600);
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--cultured);
+  margin-bottom: 30px;
+}
+
 /* ------------------------ *\
 #MAIN
 /*------------------------ */
@@ -871,4 +882,77 @@ body::-webkit-scrollbar-thumb:hover {
   color: var(--davys-gray);
   font-size: var(--fs-7);
   font-weight: var(--weight-600);
+}
+
+/** 
+#PRODUCT MINIMAL
+*/
+
+.product-minimal {
+  margin-bottom: 30px;
+}
+
+.product-minimal .product-showcase {
+  margin-bottom: 10px;
+}
+.product-minimal .showcase-wrapper {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+.product-minimal .showcase-container {
+  min-width: 100%;
+  padding: 0 5px;
+  scroll-snap-align: start;
+}
+.product-minimal .showcase {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+  border: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+}
+.product-minimal .showcase:not(:last-child) {
+  margin-bottom: 15px;
+}
+.product-minimal .showcase-content {
+  width: calc(100% - 85px);
+}
+.product-minimal .showcase-title {
+  color: var(--eerie-black);
+  font-size: var(--fs-7);
+  font-weight: var(--weight-400);
+  text-transform: capitalize;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+}
+.product-minimal .showcase-category {
+  color: var(--davys-gray);
+  font-size: var(--fs-8);
+  text-transform: capitalize;
+  width: max-content;
+  margin-bottom: 3px;
+}
+.product-minimal .showcase-category:hover {
+  color: var(--salmon-pink);
+}
+.product-minimal .price-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product-minimal .price {
+  color: var(--salmon-pink);
+  font-size: var(--fs-7);
+  font-weight: var(--weight-700);
+}
+.product-minimal .price-box del {
+  color: var(--sonic-silver);
+  font-size: var(--fs-9);
 }
