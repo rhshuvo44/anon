@@ -104,6 +104,7 @@ input::placeholder {
 }
 body {
   background: var(--white);
+  padding-bottom: 60px;
 }
 /** 
 *transition
@@ -148,6 +149,15 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .has-scrollbar::-webkit-scrollbar-thumb:hover {
   background: hsl(0, 0%, 80%);
+}
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--border-radius-md);
+  overflow: auto hidden;
+  scroll-snap-type: inline mandatory;
+  overscroll-behavior-inline: contain;
 }
 /* ------------------------ *\
 #MAIN
@@ -598,15 +608,7 @@ body::-webkit-scrollbar-thumb:hover {
 .banner {
   margin: 30px 0px;
 }
-.slider-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border-radius: var(--border-radius-md);
-  overflow: auto hidden;
-  scroll-snap-type: inline mandatory;
-  overscroll-behavior-inline: contain;
-}
+
 .slider-item {
   position: relative;
   min-width: 100%;
@@ -664,4 +666,54 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .banner-btn:hover {
   background: var(--eerie-black);
+}
+
+/** 
+*CATEGORY 
+*/
+.category {
+  margin-bottom: 30px;
+}
+.category-item {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10;
+  padding: 15px;
+  border: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+  scroll-snap-align: start;
+}
+.category-img-box {
+  background: var(--cultured);
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: var(--border-radius-sm);
+}
+.category-content-box {
+  width: 100%;
+  padding: 0px 10px;
+}
+.category-content-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.category-item-title {
+  color: var(--eerie-black);
+  font-size: var(--fs-9);
+  font-weight: var(--weight-600);
+  text-transform: uppercase;
+}
+.category-item-amount {
+  color: var(--sonic-silver);
+  font-size: var(--fs-11);
+}
+
+.category-btn {
+  color: var(--salmon-pink);
+  font-size: var(--fs-9);
+  font-weight: var(--weight-500);
+  text-transform: capitalize;
 }
