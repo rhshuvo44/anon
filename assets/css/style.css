@@ -956,3 +956,16 @@ body::-webkit-scrollbar-thumb:hover {
   color: var(--sonic-silver);
   font-size: var(--fs-9);
 }
+/** 
+#PRODUCT FEATURED
+*/
+.product-featured {
+  margin-bottom: 30px;
+}
+.product-featured .showcase-wrapper {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
