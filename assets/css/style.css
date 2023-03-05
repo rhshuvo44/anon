@@ -1330,3 +1330,45 @@ body::-webkit-scrollbar-thumb:hover {
   margin: auto;
   font-weight: var(--weight-700);
 }
+
+/* ------------------------ *\
+#SERVICE
+/*------------------------ */
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px 15px;
+  border: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+}
+.service-item {
+  min-width: 190px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.service-icon {
+  font-size: 35px;
+  color: var(--salmon-pink);
+  transition: var(--transtion-timming);
+}
+.service-icon ion-icon {
+  --ionicon-stroke-width: 25px;
+}
+.service-item :hover .service-icon {
+  color: var(--eerie-black);
+}
+.service-title {
+  color: var(--sonic-silver);
+  font-size: var(--fs-7);
+  margin-bottom: 5px;
+  font-weight: var(--weight-600);
+  text-transform: capitalize;
+}
+.service-desc {
+  color: var(--sonic-silver);
+  font-size: var(--fs-9);
+}
