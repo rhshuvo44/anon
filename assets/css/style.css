@@ -291,7 +291,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .newsletter-desc {
   color: var(--sonic-silver);
-  font-size: var(fs-7);
+  font-size: var(--fs-7);
   line-height: 1.6;
 }
 .email-field {
@@ -686,7 +686,7 @@ body::-webkit-scrollbar-thumb:hover {
   min-width: 100%;
   display: flex;
   align-items: center;
-  gap: 10;
+  gap: 10px;
   padding: 15px;
   border: 1px solid var(--cultured);
   border-radius: var(--border-radius-md);
@@ -859,7 +859,7 @@ body::-webkit-scrollbar-thumb:hover {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  letter-spacing: 0.5s;
+  letter-spacing: 0.5px;
 }
 .sidebar .showcase-rating {
   display: flex;
@@ -1011,7 +1011,7 @@ body::-webkit-scrollbar-thumb:hover {
 .product-featured .price-box {
   font-size: var(--fs-3);
   display: flex;
-  gap: 10;
+  gap: 10px;
   margin-bottom: 10px;
 }
 .product-featured .price {
@@ -1334,6 +1334,9 @@ body::-webkit-scrollbar-thumb:hover {
 /* ------------------------ *\
 #SERVICE
 /*------------------------ */
+.service {
+  margin-bottom: 30px;
+}
 .service-container {
   display: flex;
   justify-content: center;
@@ -1372,3 +1375,53 @@ body::-webkit-scrollbar-thumb:hover {
   color: var(--sonic-silver);
   font-size: var(--fs-9);
 }
+/* ------------------------ *\
+#BLOG
+/*------------------------ */
+.blog {
+  margin-bottom: 30px;
+}
+.blog-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+.blog-card {
+  scroll-snap-align: start;
+  min-width: 100%;
+}
+.blog-banner {
+  width: 100%;
+  border-radius: var(--border-radius-md);
+  margin-bottom: 20px;
+}
+.blog-category {
+  width: max-content;
+  color: var(--salmon-pink);
+  font-size: var(--fs-8);
+}
+.blog-title {
+  color: var(--eerie-black);
+  font-size: var(--fs-5);
+  font-weight: var(--weight-600);
+  line-height: 1.4;
+  margin-bottom: 5px;
+  transition: var(--transtion-timming);
+}
+.blog-title:hover {
+  color: var(--salmon-pink);
+}
+.blog-meta {
+  color: var(--sonic-silver);
+  font-size: var(--fs-7);
+}
+.blog-meta cite {
+  font-style: normal;
+  color: var(--davys-gray);
+}
+/* ------------------------ *\
+#FOOTER
+/*------------------------ */
